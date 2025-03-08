@@ -1,0 +1,33 @@
+<!-- views/planets/new.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a Planet</title>
+  </head>
+  <body>
+    <h1>Add a New Planet!</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="/planets/">Back to Planets</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <form action="/planets" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="distance">Distance in Lightyears:</label>
+        <input type="text" name="distance" id="distance" />
+    
+        <label for="hasAtmosphere">Has Atmosphere?</label>
+        <input type="checkbox" name="hasAtmosphere" id="hasAtmosphere" />
+    
+        <button type="submit">Add Planet</button>
+      </form>
+  </body>
+</html>

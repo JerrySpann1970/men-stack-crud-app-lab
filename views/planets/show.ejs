@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <%= planet.name %>
+    </title> <!-- Dynamic title based on planet name -->
+</head>
+
+<body>
+   
+
+    <h1><%= planet.name %></h1>
+    <!-- Conditional rendering based on fruit's readiness -->
+    <% if (planet.hasAtmosphere) { %>
+      <p>This planet has an atmosphere!</p>
+    <% } else { %>
+      <p>This planet does not have an atmosphere!</p>
+    <% } %>
+
+    <form action="/planets/<%=planet._id%>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%= planet.name %></button>
+    </form>
+    <a href="/planets/<%= planet._id %>/edit">Edit <%= planet.name %></a>
+
+    <a href="/fruits/">Back to Planets</a>
+
+</body>
+
+</html>
