@@ -15,7 +15,7 @@
         <input type="text" name="name" value="<%= planet.name %>" />
 
         <label for="distance">Distance in Lightyears:</label>
-        <input type="text" name="distance" id="distance" />
+        <input type="text" name="distance" id="distance" value="<%= planet.distance %>"/>
     
         <label for="hasAtmosphere">Has Atmosphere?</label>
         <input type="checkbox" name="hasAtmosphere" <% if (planet.hasAtmosphere) { %>checked<% } %> >
