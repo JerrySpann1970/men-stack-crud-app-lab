@@ -3,12 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/styles.css">
     <title>Edit a Planet</title>
   </head>
   <body>
     <h1>Edit <%= planet.name %></h1>
-    <a href="/planets/new">Add New Planet</a>
-    <a href="/planets">Back to Planets</a>
+    <nav>
+      <ul>
+        <li>
+          <a href="/planets/new">Add New Planet</a> 
+        </li>
+        <li>
+          <a href="/planets">Back to Planets</a>
+        </li>
+      </ul>
+    </nav>
     <form action="/planets/<%=planet._id%>?_method=PUT" method="POST">
 
         <label for="name">Name:</label>
@@ -16,12 +25,18 @@
 
         <label for="distance">Distance in Lightyears:</label>
         <input type="text" name="distance" id="distance" value="<%= planet.distance %>"/>
-    
-        <label for="hasAtmosphere">Has Atmosphere?</label>
-        <input type="checkbox" name="hasAtmosphere" <% if (planet.hasAtmosphere) { %>checked<% } %> >
 
-    
+        <div class="checkbox-div">
+            <label for="hasAtmosphere">Has Atmosphere?</label>
+            <input type="checkbox" name="hasAtmosphere" <% if (planet.hasAtmosphere) { %>checked<% } %> >
+        </div>
+       
         <button type="submit">Update Planet</button>
       </form>
+
+      <img class="space-pic2"
+        src="https://bgr.com/wp-content/uploads/2017/06/kepler.jpg?resize=1020%2C574&quality=82"
+        alt="outer space image" />
+
   </body>
 </html>

@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Russo+One&family=Sigmar&display=swap');
 
+/* Index page styling */
+
 h1 {
     font-family: "Russo One", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-img {
+.space-pic1 {
+    width: 600px;
+}
+
+.space-pic2 {
+    width: 300px;
+}
+
+.space-pic3 {
+    margin: 25px;
     width: 600px;
 }
 
@@ -29,5 +40,121 @@ p {
     font-family: "Russo One", serif;
     color: white;
     font-size: 1.5em;
+    margin-bottom: 50px;
+}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+footer {
+    font-size: 2em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: rgb(224, 205, 205);
+}
+
+/* New page styling */
+
+
+form {
+    font-family: "Sigmar", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #564d8b;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 5px 6px #31302f;
+    margin: 50px 10px;
+    color: rgb(218, 196, 196);
+}
+
+.checkbox-div {
+    padding-top: 5px;
+    flex-direction: row;
+}
+
+label,
+input {
+    margin: 10px 2px 0 2px;
+}
+
+button {
+    align-self: center;
+    margin: 10px 4px 4px 4px;
+    background-color: #8977d8;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    width: 15em;
+}
+
+button:hover {
+    background-color: #5b4296;
+}
+
+button:active {
+    background-color: #aca7d8;
+}
+
+.planet-cards {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    width: 40px;
+    height: 70px;
+    background-color: white;
+    margin: 10px 15px;
+    padding: 30px 50px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    border: 2.5px solid #ffbd59;
+}
+
+.planet-cards:hover {
+    border: 4px solid #845bf4;
+    background-color: grey;
+}
+
+.planet-cards:active {
+    background-color: #a4cf5f67;
+    border: 2.5px solid #5fff59;
+    color: gray;
+}
+
+.index-header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
 }

@@ -5,6 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/styles.css">
     <title>Add a Planet</title>
   </head>
   <body>
@@ -23,11 +24,18 @@
 
         <label for="distance">Distance in Lightyears:</label>
         <input type="text" name="distance" id="distance" />
-    
-        <label for="hasAtmosphere">Has Atmosphere?</label>
-        <input type="checkbox" name="hasAtmosphere" id="hasAtmosphere" />
-    
+
+        <div class="checkbox-div">
+            <label for="hasAtmosphere">Has Atmosphere?</label>
+            <input type="checkbox" name="hasAtmosphere" id="hasAtmosphere" />
+        </div>
+        
         <button type="submit">Add Planet</button>
       </form>
+
+      <img class="space-pic2"
+      src="https://scitechdaily.com/images/Brown-Dwarf-Orbiting-Close-Bright-Star-777x437.jpg"
+      alt="outer space image" />
+
   </body>
 </html>

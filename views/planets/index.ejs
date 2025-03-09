@@ -5,20 +5,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/styles.css">
     <title>Planets Index</title>
   </head>
   <body>
-    <h1>All Planets</h1>
-    <a href="/planets/new">Add New Planet</a>
+    <div class="index-header-div">
+      <h1>All Planets</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/planets/new">Add New Planet</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
     <ul>
+
       <% planets.forEach(planet => { %>
         <li>
-            <a href="/planets/<%= planet._id %>">
+            <a class="planet-cards" href="/planets/<%= planet._id %>">
                 <%= planet.name %>
             </a>
         </li>
       <% }); %>
     </ul>
+
+    <img class="space-pic3"
+    src="https://cdn.pixabay.com/photo/2023/04/05/03/18/cosmos-7900553_960_720.jpg"
+    alt="outer space image" />
+
+
   </body>
   
 </html>
